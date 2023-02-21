@@ -1,0 +1,9 @@
+{
+    "require": {
+        "voku/simple_html_dom": "^4.8",
+        "guzzlehttp/guzzle": "^7.4",
+        "telegram-bot/api": "^2.3",
+        "voku/portable-utf8": "^6.0",
+        "thingengineer/mysqli-database-class": "dev-master"
+    }
+}
