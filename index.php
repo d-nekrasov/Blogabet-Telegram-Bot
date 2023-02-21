@@ -13,6 +13,14 @@ $GLOBALS["dbConfig"] = array(
     'database' => 'dbName',
 );
 
+// Blogabet.com auth credits
+$GLOBALS["blogabetAuth"] = array(
+    'email' => "example@mail.com", // email example
+    'password' => "12345", // password example
+);
+
+
+
 function getEventIfExist($config, $data){
     $db = new MysqliDb ($config['host'], $config['user'], $config['password'], $config['database']);
     $events = $db->rawQueryOne('SELECT * from events where `uid`=?', $data);
@@ -33,10 +41,10 @@ function getAuthCookie($host){
         "X-Requested-With" => "XMLHttpRequest"
     );
 
-    // Blogabet.com auth credits
+
     $authData = array(
-        "email" => "example@mail.com", // email example
-        'password' => "12345", // password example
+        "email" => $GLOBALS["blogabetAuth"]["email"], // email example
+        'password' => $GLOBALS["blogabetAuth"]["password"], // password example
         'remember-me' => 1
     );
 
