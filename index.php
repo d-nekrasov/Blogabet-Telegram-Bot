@@ -3,7 +3,6 @@ require_once 'vendor/autoload.php';
 
 use voku\helper\HtmlDomParser;
 use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Request;
 
 
 //Database config
