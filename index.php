@@ -33,9 +33,10 @@ function getAuthCookie($host){
         "X-Requested-With" => "XMLHttpRequest"
     );
 
+    // Blogabet.com auth credits
     $authData = array(
-        "email" => "example@mail.com", // email
-        'password' => "12345", // email password
+        "email" => "example@mail.com", // email example
+        'password' => "12345", // password example
         'remember-me' => 1
     );
 
